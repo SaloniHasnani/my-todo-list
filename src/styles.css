@@ -1,0 +1,60 @@
+/* You can add global styles to this file, and also import other style files */
+
+html, body { height: 100%; width: auto;}
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif;
+  background-image: url("/assets/images/background-img.jpg");
+  background-size: auto;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+}
+
+@media screen and (max-width:320px) {
+  body{
+    background-image: url("/assets/images/background-img.jpg");
+  background-size: auto;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  }
+}
+
+
+@media screen and (max-width:480px) {
+  body{
+    background-image: url("/assets/images/background-img.jpg");
+  background-size: auto;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  }
+}
+@media screen and (max-width:768px) {
+  body{
+    background-image: url("/assets/images/background-img.jpg");
+  background-size: auto;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  }
+}
+
+@media screen and (max-width:1024px) {
+  body{
+    background-image: url("/assets/images/background-img.jpg");
+  background-size: auto;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  }
+}
+
+@media screen and (max-width:1250px) {
+  body{
+    background-image: url("/assets/images/background-img.jpg");
+  background-size: auto;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  }
+}

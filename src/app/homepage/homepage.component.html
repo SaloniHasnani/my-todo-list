@@ -1,0 +1,20 @@
+<div class="homepage">
+
+  <div *ngIf="this.taskList?.length == 0">
+    <img src="/assets/images/empty-list.png" class="image" />
+  </div>
+
+  <table *ngIf="this.taskList?.length > 0 ">
+    <tr class="header">
+      <th colspan="3"> My Todo List </th>
+
+    </tr>
+    <tr *ngFor="let item of taskList">
+      <td>{{item?.task}}</td>
+      <td><img src="/assets/images/important-img.png" title="Add Task To Important List" (click)="addToImportant(item)">
+      </td>
+      <td><button (click)="deleteTask(item)">Delete Task</button></td>
+    </tr>
+  </table>
+
+</div>

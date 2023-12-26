@@ -1,0 +1,19 @@
+<div class="important">
+
+  <div *ngIf="this.importantTaskList?.length === 0">
+    <img src="/assets/images/empty-list.png" class="image" />
+  </div>
+
+  <table *ngIf="this.importantTaskList?.length !== 0 ">
+    <tr class="header">
+      <th>My Important Task List</th>
+      <th> </th>
+    </tr>
+    <tr *ngFor="let item of importantTaskList">
+      <td>{{item?.task}}</td>
+      <td><img src="/assets/images/important-img.png" style="height: 30px; width: 30px;"
+          title="Add Task To Important List" (click)="removeFromList(item)"></td>
+    </tr>
+  </table>
+
+</div>

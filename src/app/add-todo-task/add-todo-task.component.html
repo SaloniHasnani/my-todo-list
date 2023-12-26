@@ -1,0 +1,17 @@
+<div class="add-task">
+  <form [formGroup]="addTaskForm">
+    <label>Task : </label>
+    <mat-form-field>
+      <input matInput type="text" placeholder="Please enter your task" formControlName="taskFormControl">
+    </mat-form-field>
+    <mat-error
+      *ngIf="(addTaskForm.get('taskFormControl').dirty || addTaskForm.get('taskFormControl').touched) && addTaskForm.get('taskFormControl').hasError('required')">
+      Please enter your task
+    </mat-error>
+
+    <div class="popup-button">
+      <button mat-raised-button (click)="add()">Add Task</button>
+    </div>
+
+  </form>
+</div>

@@ -1,0 +1,13 @@
+<div>
+  <nav>
+    <div class="header">
+      <ul>
+        <li><a routerLink='/home' (click)="test($event)" [ngClass]="home ? 'link-clicked' : ''">Home</a></li>
+        <li><a routerLink='/add-task' (click)="test($event)" [ngClass]="add ? 'link-clicked' : ''">Add Task </a></li>
+        <li><a routerLink='/important-task-list' (click)="test($event)"
+            [ngClass]="important ? 'link-clicked' : ''">Important Task</a></li>
+      </ul>
+    </div>
+  </nav>
+  <router-outlet></router-outlet>
+</div>
